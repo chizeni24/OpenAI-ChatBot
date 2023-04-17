@@ -1,6 +1,6 @@
 import openai
 
-openai.api_key = "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"
+openai.api_key = "Add-Secret key"
 
 # Create an empty list to store messages
 messages = []
