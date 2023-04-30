@@ -23,6 +23,6 @@ jobs:
       - name: Run Python Script
         run: |
           pip install requests
-          python Chatbot_Marcus Aurelius.py
+          python3 Chatbot_Marcus Aurelius.py
        
         
