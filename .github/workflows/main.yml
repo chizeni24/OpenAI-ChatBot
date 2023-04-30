@@ -12,16 +12,17 @@ jobs:
   sync-to-hub:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - name: Checkout Code
+        uses: actions/checkout@v2
+
+      - name: Setup Python
+        uses: actions/setup-python@v4
         with:
-          fetch-depth: 0
-      - name: Add remote 
-        env:
-          HF: ${{ secrets.HF }}
-        run: git remote add space https://huggingface.co/spaces/Chizeni/LLM_PHILOSOPHER
-      - name: Push to hub
-        env:
-          HF: ${{ secrets.HF }}
-        run: git push --force https://huggingface.co/spaces/Chizeni/LLM_PHILOSOPHER
-        
+          python-version: '3.11'
+          
+      - name: Run Python Script
+        run: |
+          pip install requests
+          python Chatbot_Marcus Aurelius.py
+       
         
