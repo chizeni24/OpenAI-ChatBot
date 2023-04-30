@@ -5,7 +5,9 @@ on:
 
   # to run this workflow manually from the Actions tab
   workflow_dispatch:
-
+  env:
+    openai_id: ${{ secrets.SECRET_KEY_OPENAI }}
+    
 jobs:
   sync-to-hub:
     runs-on: ubuntu-latest
@@ -15,7 +17,6 @@ jobs:
           fetch-depth: 0
       - name: Add remote 
         env:
-          OP: ${{ secrets.SECRET_KEY_OPENAI }}
           HF: ${{ secrets.HF }}
         run: git remote add space https://huggingface.co/spaces/Chizeni/LLM_PHILOSOPHER
       - name: Push to hub
