@@ -2,7 +2,7 @@ import os
 import openai
 import gradio
 
-openai.api_key = os.environ["openai_id"]
+openai.api_key = os.environ["OPEN_AI_KEY"]
 
 
 
