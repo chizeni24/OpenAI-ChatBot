@@ -53,4 +53,4 @@ with block:
     
     message.update(value= "")
 
-block.launch(debug=True, share = True)
+block.launch(debug=True)
