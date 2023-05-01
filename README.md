@@ -1,3 +1,15 @@
+---
+title: Chatbot
+emoji: 🌖
+colorFrom: purple
+colorTo: purple
+sdk: gradio
+sdk_version: 3.0.6
+app_file: app.py
+pinned: false
+license: cc
+---
+
 # Chatbot Created with OpenAI and Deployed with Gradio
 This chatbot was created using the OpenAI API, which utilizes cutting-edge natural language processing technology to enable the chatbot to understand and respond to user input. The large Language model utilized here was the Chatgpt-3. The chatbot has been deployed using Gradio, a user-friendly platform for building and deploying machine learning applications. 
 
