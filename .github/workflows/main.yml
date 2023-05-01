@@ -6,7 +6,7 @@ on:
   # to run this workflow manually from the Actions tab
   workflow_dispatch:
 env:
-    openai_id: ${{ secrets.SECRET_KEY_OPENAI }}
+    openai_id: ${{ secrets.OPEN_AI_KEY }}
 
 jobs:
   sync-to-hub:
